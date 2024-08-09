@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+.comm{
+
+    color: blue;
+    /* background-color: aqua; */
+    /* border: 2px solid rgb(45, 5, 5); */
+
+}
+a{
+    text-decoration: none;
+}
+.aa{
+
+    color: rgb(67, 24, 24);
+    
+    background-color: rgb(151, 152, 152);
+    border: none;
+   padding: 6px;
+
+   /* its show same pointer on button  */
+
+   cursor: pointer;
+    font: 13px;
+    border-radius: 4px;
+}
+/* when move pointer to bbutton */
+a:hover{
+
+background-color:rgb(4, 67, 101) ;
+
+}
+ /* a:visited{
+    
+    background-color:purple;
+
+}  */
+a:active{
+
+    background-color: rgb(99, 12, 31);
+}
+.co{
+/* giving background color */
+background-color: rgb(14, 13, 13);
+/* float: left; */
+color: aliceblue;
+
+border-radius: 8px;
+
+}
+.co li{
+/* giving inside list attributr property */
+    float: left;
+    /* remove bullets etc */
+list-style: none;
+padding: 10px 21px;
+font-size: 23px;
+    font-weight: bold;
+
+}
+
+.co ul{
+
+    /* save from overflow */
+
+overflow: auto;
+
+}
+
+.co a{
+
+    /* giving link padding  */
+
+padding: 3px 3px;
+
+}
+
+.co li a
+{
+
+/* padding: 3px 3px; */
+/*  giving color to link  */
+color: aliceblue;
+
+}
+
+.search{
+
+    color:aliceblue;
+    float: right;
+    padding: 10px 21px;
+}
+
+.co input{
+
+    border-radius: 10px;
+    padding: 4px 28px;
+}
+
+body{
+
+    background-color: burlywood;
+}
+.for{
+
+border : solid 2px blue;
+padding: 10px 10px;
+width:400px;
+margin: auto;
+background-color: chocolate;
+
+}
+
+    </style>
+</head>
+<body>
+    
+<h1 > <center>FORM FOR JOB</center> </h1>
+<hr>
+
+<header>
+
+    <nav class="co">
+
+        <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">ASK</a></li>
+        <li><a href="#">FAQ</a></li>
+        <div class="search">
+             <input type="text" name="search" id="aa" placeholder="Search in website">
+             <button class="aa">Search</button>
+        </div>
+        </ul>
+
+    </nav>
+
+
+
+</header>
+<br>
+<br>
+<br>
+<br> 
+
+<ul type="disc">
+    <li>
+        <em><b> FILL THE FORM </b></em>
+    </li>
+</ul>
+
+<form action="data.php" class="for">
+
+<div>
+
+    <label for="name"> NAME </label>
+    <input type="text" name=" myname" id="name">
+</div>
+<br>
+
+<div>
+
+    <label for="na"> FATHER NAME </label>
+    <input type="text" name=" FAMILY" id="na">
+</div>
+<br>
+
+<div>
+<label for="+"> Are you 18+ ?</label>
+<input type="checkbox" name="18" id="+">
+</div>
+<br>
+
+<div>
+
+    <label for="ni"> DOB </label>
+    <input type="date" name="dob" id="ni">
+</div>
+<br>
+
+<div>
+
+    <label for="em"> Email </label>
+   <input type="email" name="email" id="em">
+</div>
+<br>
+
+<div>
+
+    <label for="nu">Enter The Number </label>
+   <input type="number" name="num" id="nu">
+</div>
+<br>
+
+<div>
+
+    <label for="yc"> Your CNIC  </label>
+   <input type="number" name="CNic" id="yc">
+</div>
+<br>
+
+<div>
+
+    <label for="yc"> Father CNIC  </label>
+   <input type="number" name="CNic" id="yc">
+</div>
+<br>
+
+<div>
+
+    <label for="gen"> <b> GENDER : </b> </label>
+   MALE<input type="radio" name="gender" id="gen">
+    FEMALE<input type="radio" name="gender" id="gen">
+    OTHERS<input type="radio" name="gender" id="gen">
+</div>
+<br>
+
+<div>
+<label for="des"> <b> PROVINC : </b></label>
+<select name="nat" id="des">
+<option value="punjab" selected>Punjab</option>
+<option value="sindh">Sindh</option>
+<option value="balochistan">Balochistan</option>
+<option value="kpk">Kpk</option>
+<option value="gilgit">Gilgit</option>
+</select>
+</div>
+<br>
+
+<div>
+    <input type="submit" value="submitt">
+    <input type="reset" value="reset">
+</div>
+</form>
+<br>
+<br>
+<div class="comm">
+
+    <a href="https://web.facebook.com/?_rdc=1&_rdr" class="aa">contact us</a>
+    <button class="aa"> Read me </button>
+
+</div>
+
+
+</body>
+</html>

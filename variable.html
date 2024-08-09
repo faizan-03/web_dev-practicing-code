@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable and animation</title>
+
+<style>
+
+    :root{
+        
+        /* its for the global variable  */
+        
+        --secondary-color:black;
+        
+    }
+    
+    *{
+
+        margin: 0px;
+        padding: 0px;
+
+    }
+   
+
+.b{
+    
+    justify-content: center;
+
+align-content: center;
+align-items: center;
+    /* variable calling  */
+    display: flex;
+    background-color: var(--secondary-color);
+        height: 8in;
+        width: 100%;
+    
+}
+
+#bb{
+
+    display: flex;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    border: 2px solid green;
+    color:white;
+    justify-content: center;
+    align-items: center;
+
+    /* transition properties */
+    transition-duration: 1s;
+    transition-delay: 0.3s;
+
+    /* shortcut  */
+    transition: all 1s ease-in-out 0.3s;
+
+}
+
+#bb:hover{
+
+    background-color: orange;
+height: 300px;
+width: 300px;
+border-radius: 100px;
+font-size: 30px;
+
+}
+
+.box{
+
+    /* varible and its a local variable  */
+
+    display:flex;
+    --primary-color:blue;
+
+    /* display: flex; */
+    width: 50px;
+    height: 100px;
+    margin: 5px;
+    border: 2px solid green;
+position: relative;
+    /* variable will be called by var than variable name */
+    color:var(--primary-color);
+/* animation identifier name  */
+    animation-name: fazi1;
+    /* speed of animagion  */
+    animation-duration: 0.7s;
+    /* how much delay first when page load  */
+    animation-delay: 3s;
+    /* how much it runs */
+    animation-iteration-count: 3;
+
+    /* if the last property  remains apply it keep forward otherwise if back to real position than use alternate  */
+
+animation-fill-mode:alternate;
+
+/* animation starting function start slow than fast */
+
+animation-timing-function: ease-in;
+/* animation starting function start fast than slow */
+
+animation-timing-function: ease-out;
+/* animation starting function start fast mid slow than fast */
+
+animation-timing-function: ease-in-out;
+
+/* animation direction reverse  */
+
+/* animation-direction: reverse; */
+
+}
+
+@keyframes fazi1 {
+
+    0%{
+        top: 0px;
+        left: 0px;
+    }
+    25%{
+        top: 0px;
+        left: 250px;
+    }
+    50%{
+        top: 250px;
+        left: 250px;
+    }
+    75%{
+        top: 250px;
+        left: 0px;
+    }
+    100%{
+        top: 0px;
+        left: 0px;
+    }
+}
+
+/*  animation syntax */
+@keyframes fazi{
+
+    from
+    {
+      width: 200px;
+
+    }
+ to
+ {
+width: 400px;
+
+ }
+
+}
+
+#c{
+
+    display: flex;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    border: 2px solid green;
+    color:white;
+    justify-content: center;
+    align-items: center;
+   align-content: center;
+
+   transition: all 1s ease-in-out;
+
+
+}
+
+#c:hover{
+
+    /* it will rotate the item  */
+    transform: rotate(45deg);
+    /* to change the angles */
+    transform: skew(45deg);
+
+    /* to pop up increase scale */
+
+    transform: scale(3);
+    
+    /* to move right left */
+
+    transform: translate(123px, 123px);
+
+}
+
+</style>
+
+
+</head>
+<body>
+
+    <header class="b">
+
+        <p class="box">a</p>
+        <p class="box">a</p>
+        <p class="box">a</p>
+     <p id="bb">this box</p>
+     <p id="c">i am ali </p>
+    </header>
+     
+
+
+    
+</body>
+</html>

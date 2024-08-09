@@ -1,0 +1,24 @@
+#first{
+    color:black;
+    background-color:seagreen;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+      /* line-height: 22em; */
+}
+
+.one{
+
+color:blue;
+background-color: rebeccapurple;
+height: 100px;
+width: 400px;
+border: 20px grey solid;
+border-radius: 20px;
+
+}
+
+.iii{
+
+color:red;
+
+}

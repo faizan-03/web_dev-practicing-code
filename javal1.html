@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Javascript</title>
+    <!-- for javascript -->
+    <script src="tut.js"></script>
+
+    <style>
+        #bt {
+
+            padding: 10px 20px;
+            background-color: pink;
+            color: black;
+            border-radius: 13px;
+            font-weight: bold;
+
+
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="par">
+
+        <p id="pp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo a cupiditate quibusdam fugit,
+            eligendi officiis aut ratione! Omnis libero asperiores et dignissimos atque obcaecati, consequuntur amet
+            debitis, nulla error quibusdam quo explicabo aliquam ipsum facilis? Ducimus rerum expedita alias iste
+            perferendis, blanditiis tenetur cumque architecto sint placeat omnis deserunt officia minima nemo culpa odit
+            dolore voluptas esse delectus corrupti odio. Dolores voluptatibus iusto minus pariatur ad facere rem illo,
+            accusamus id veritatis tenetur, eligendi officia recusandae dignissimos ab, quisquam quas voluptate modi
+            neque labore harum et? Accusamus perspiciatis rerum, quod autem aliquid nobis, voluptatem eos voluptates
+            corrupti architecto consequatur. Sequi facere illum deleniti molestias, soluta id excepturi, ipsa dolorem
+            odio ducimus temporibus ullam, quae repellendus distinctio est voluptatem corrupti officiis non. Quae sit
+            mollitia rem, alias nesciunt eligendi nulla sint amet commodi. Veniam distinctio eos molestias sunt
+            asperiores dolorum officiis in earum quaerat, nemo voluptate error aliquid omnis iure cum voluptates
+            doloribus a modi minima id autem ad aspernatur numquam. Totam enim dolorum suscipit explicabo saepe fuga
+            voluptas ducimus accusantium qui provident porro facere accusamus velit quam repellendus ipsa, minus quia
+            ullam delectus rerum, laborum praesentium, unde excepturi cum. Quod exercitationem esse consequatur alias
+            voluptatum vero reiciendis fuga quam in fugiat repellat veniam nemo inventore, ipsa, ut, quas voluptas
+            excepturi reprehenderit asperiores non nulla perspiciatis. Magnam repellat odit odio, eveniet deleniti qui
+            expedita natus deserunt dicta sed id aliquid, tempora obcaecati et rem!</p>
+    </div>
+    <button id="bt" onclick="tohide()">SUBMITTED</button>
+    <br>
+    <span id="time">
+        time is
+    </span>
+    <script>
+
+        let para = document.getElementById('pp');
+        para.addEventListener('mouseover', function run() {
+
+            console.log('inside para');
+
+        })
+
+        para.addEventListener('mouseout', function run() {
+
+            console.log('outside para');
+
+        })
+// DATE AND TIME 
+        // function displaytime() {
+
+        //     time = new Date();
+        //     console.log(time);
+        //     document.getElementById('time').innerHTML=time;
+        // }
+        // setInterval(displaytime,1000);
+        function tohide() {
+
+            let a = document.getElementById('bt');
+            let para = document.getElementById('pp');
+
+            if (para.style.display != "none") {
+                para.style.display = "none";
+            }
+            else
+                para.style.display = "block";
+
+
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector</title>
+
+<style>
+
+header{
+    display:flex;
+   
+}
+
+.nav{
+
+    display:flex;
+    /* border: 2px solid white ; */
+margin-left: 0px;
+}
+
+li{
+    list-style: none;
+    margin: 0px 7px;
+    padding: 5px 36px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+header::before{
+
+    background: url('https://www.shutterstock.com/image-photo/green-nature-landscape-260nw-66276439.jpg')no-repeat center center/cover;
+    content:'';
+position: absolute;
+width: 100%;
+height: 100%;
+z-index: -1;
+top: 0;
+left: 0;
+opacity: 0.3;
+
+}
+
+body{
+margin: 0px;
+padding: 0px;
+    background-color: black;
+    color: white;
+
+  
+}
+
+.b{
+
+    display: flex;
+    border: 2px solid red;
+    flex-direction: column;
+height:175px;
+justify-content: center;
+padding: 30px;
+font-size: 20px;
+margin:17px 130px;
+text-align: center;
+
+/*  shadow the box x,y axis  blur radius and spraed radius */
+box-shadow: 2px 3px 4px 4px  rgb(17, 175, 184);
+/* insest is for inside shadow */
+box-shadow: inset 2px 3px rgb(245, 4, 120);
+
+/* text shadoe */
+
+text-shadow: 2px 2px 3x mediumvioletred  ;
+}
+
+h1{
+
+    text-align: center;
+    font-size: 30px;
+
+}
+
+</style>
+
+
+</head>
+<body>
+    
+    <header>
+
+        <ul class="nav">
+            <li class="a">home</li>
+            <li class="a">faq</li>
+            <li class="a">goto</li>
+            <li class="a">into</li>
+        </ul>
+
+    </header>
+
+    <section class="b">
+
+<h1>WELLCOME TO SUPERIOR</h1>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat aspernatur temporibus ratione ipsum culpa reprehenderit et, omnis error molestiae commodi iste? Nobis laudantium labore nulla consequuntur voluptatum at dolore quasi cum temporibus quo eos natus laborum </p>
+
+    </section>
+<hr>
+
+</body>
+</html>

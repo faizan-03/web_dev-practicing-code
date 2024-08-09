@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Flex Box</title>
+
+<style>
+
+.con{
+
+width: 100%;
+height:500px;
+border: 2px solid red;
+display: flex;
+
+/*  it will wrap for screen  */
+
+flex-wrap: wrap;
+
+/*  reverse wrap  */
+
+/* flex-wrap:wrap-reverse; */
+
+/* default direction  */
+
+flex-direction: row;
+
+/* content will be in centre  */
+
+justify-content: center;
+
+/* content will have equal distance  */
+justify-content: space-between;
+
+/* will have equal distance from start */
+/* justify-content: space-around; */
+
+/* will have equal distance from mid */
+/* justify-content: space-evenly; */
+
+/* direction column */
+
+/* flex-direction: column; */
+
+
+/* set the content direction  */
+align-items: center;
+align-items:flex-end;
+align-items:flex-start;
+
+
+}
+
+.box{
+
+height: 200px;
+width: 200px;
+border: 2px solid black;
+/* display: inline-block; */
+
+margin: 10px;
+padding: 10px;
+
+}
+
+#box1{
+
+    background-color: aqua;
+
+    /* position: relative; */
+
+    /* top: 36px;
+   z-index: 34; */
+
+
+   /* when screen expand it will move with ratio 3 as compare to others */
+
+   /* flex-grow: 3; */
+   
+   
+   /* it will const the size  */
+   /* flex-basis: 500px; */
+
+
+   /* shortcit of grow shrink and basis */
+
+   /* flex: 2 2 100px; */
+
+}
+#box2{
+
+    background-color: rgb(155, 16, 27);
+    /* it will occupies the space but element not show */
+
+/* visibility:hidden; */
+
+/* it will hide the element even space will be hide */
+/* display: none; */
+
+/* position: relative;
+
+top:37px;
+
+z-index: 38; */
+
+/*  when screen reduce or shrink it will decrease with this ratio  */
+
+/* flex-shrink: 2; */
+
+}
+#box3
+{
+
+    background-color: rgb(47, 25, 173);
+/* if order is higher it will move to the end  */
+   
+order: 40;
+
+
+/* individual attribute to align  */
+align-self: center;
+align-self: flex-end;
+align-self: flex-start;
+
+}
+
+
+/* it is indicate direct cheild of class */
+div > p{
+
+background-color: red;
+color: white;
+
+
+}
+
+/* it will indicate the next element of div */
+div + p{
+
+background-color: red;
+color: white;
+
+
+}
+
+/* selector in form */
+input[type='text']{
+
+    height: 20px;
+color:yellowgreen;
+border: 2px solid red;
+
+}
+
+/* selector in form */
+input[type='email']{
+
+    height: 20px;
+color:rgb(103, 16, 16);
+border: 2px solid rgb(76, 11, 151);
+
+}
+input[type='submit']{
+
+    height: 20px;
+color:rgb(24, 184, 9);
+border: 2px solid rgb(13, 174, 219);
+
+
+}
+
+a{
+
+    display: block;
+    font-size: medium;
+    color: rgb(6, 248, 252);
+    text-decoration: none;
+    margin-top: 10px;
+
+}
+
+/* access the element of ancher tag  */
+a[target]{
+color: black;
+}
+
+/* Acess the element of the list  */
+
+li:nth-child(odd){
+
+color:yellow;
+
+
+}
+
+</style>
+
+
+</head>
+<body>
+    
+    <form action="goto.php" class="frm">
+
+        <input type="text" name="nam" id=" ii" placeholder=" enter name">
+        <input type="email" name="na" id=" iii" placeholder=" enter mail">
+    <input type="submit" value="submit">
+    </form>
+    
+<div class="main">
+
+    <a href="https://translate.google.com/" target="_blank"> google translate</a>
+    <a href="https://www.instagram.com/" target=" _self">instagram</a>
+    <a href="https://www.youtube.com/">youtube</a>
+
+<ul type="square" class="a">
+
+    <li class="cc">a</li>
+    <li class="cc">b</li>
+    <li class="cc">c</li>
+    <li class="cc">d</li>
+    <li class="cc">e</li>
+
+</ul>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="rrr">
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, quia.</p>
+<ul>
+<li><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, optio!</p></li>
+</ul>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, minima?</p>
+
+</div>
+
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique, explicabo?</p>
+
+
+
+<div class="con">
+    <div class="box" id="box1">
+
+i am 1
+
+    </div>
+    <div class="box" id="box2">
+
+i am 2
+
+    </div>
+<div class="box" id="box3">
+
+i am 3
+
+</div>
+</div>
+
+
+
+</body>
+</html>

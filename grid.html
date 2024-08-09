@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+
+
+    <style>
+
+
+.container{
+
+    display: grid;
+    
+    /* specify width */
+    grid-template-columns: 100px 100px 100px;
+
+    /* how much column with width  no. of column and width*/
+    grid-template-columns: repeat(3,300px);
+    /* other way */
+    grid-template-columns: repeat(4, auto);
+    
+    /* to gap between blocks */
+    grid-gap: 5px;
+
+    /* how much is row size 1 ratio 2 ratio 1 */
+    grid-template-rows: 1fr 1fr 1fr ;
+
+    /* more than specified upper row than we use auto property */
+
+    grid-auto-rows: 1fr;
+
+/* too make grid  responsive website auto-fit for dimmension while minmax give minimum and the maximum value for the space occupation */
+
+grid-template-columns: repeat(auto-fit,minmax(100px,200px));
+
+}
+
+.class{
+
+    background-color: red;
+    color: white;
+    border: 5px solid green;
+    padding: 10px 5px;
+margin: 0px;
+}
+
+/* access first child of class */
+.class:first-child{
+
+    /* merge to row or colum space */
+grid-column: 1 / span 2;
+grid-row: 1 / span 3;
+
+
+}
+
+    </style>
+
+
+</head>
+<body>
+    
+    <div class="container">
+<p class="class">i am faizan 1</p>
+<p class="class">i am faizan 2</p>
+<p class="class">i am faizan 3</p>
+<p class="class">i am faizan 4</p>
+<p class="class">i am faizan 5</p>
+<p class="class">i am faizan 5</p>
+<p class="class">i am faizan 5</p>
+<p class="class">i am faizan 5</p>
+<p class="class">i am faizan 5</p>
+<p class="class">i am faizan 5</p>
+<p class="class">i am faizan 5</p>
+<p class="class">i am faizan 5</p>
+
+
+    </div>
+
+
+</body>
+</html>
